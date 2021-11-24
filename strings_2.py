@@ -1,4 +1,4 @@
-a = input('Type your ')
+a = input('Type your genome sequence')
 
 # counter is set to 1 by default. We have at least 1 symbol
 count = 1
@@ -20,8 +20,11 @@ for k in a:
         # of times we had similar symbols, like 'aaa' = 'a3'
         else:
             print(a[i] + str(count), end = '')
+            # counter stays the same
             count = 1
             i += 1
             j += 1
+
+# We set the number of times that 'i' was written in the string
 a = a[i] + str(count)
 print(a)
