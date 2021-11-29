@@ -10,8 +10,12 @@ strings = len(a)
 columns = len(a[0])
 print(strings)
 print(columns)
+new_nested_list = []
 
 
+if strings == 1 and columns == 1:
+    a[0][0] = a[0][0] * 4
+    new_nested_list.append(a[0][0])
 
-
+print(*new_nested_list)
 print(a)
