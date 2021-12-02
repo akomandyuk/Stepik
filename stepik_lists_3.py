@@ -7,6 +7,7 @@ new_list: List[int] = []
 # Set the counter which will be equal to the indices in list 'a'
 n = 0
 
+# We sort the list 'a'
 a.sort()
 # print(a)
 
@@ -17,8 +18,10 @@ if len(a) == 1:
 else:
     # Check every element of our list
     for i in a:
+        # If 'n' is the last element of a list, just pass
         if n == (len(a) - 1):
             pass
+        # If 'n' is before the last one, check this next element only
         elif n == (len(a) - 2):
             # If element 'i' is the same as the one next to him
             if i == a[n + 1]:
