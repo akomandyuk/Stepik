@@ -33,7 +33,7 @@ if strings == 1 and columns == 1:
     print(*new_nested_list)
 
 else:
-    # We take the 1 string
+    # We take the 1st string
     for j in range(strings):
         # Set the new list to empty
         new_nested_list = []
